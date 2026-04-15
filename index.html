@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRJDeveloper</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap)" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+    
+    <!-- AOS Animation Library -->
+    <link href="[unpkg.com](https://unpkg.com/aos@2.3.1/dist/aos.css)" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <span class="loader-text">JRJDev</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">JRJDev</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">
+                        <i class="fas fa-handshake"></i>
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg"aria-hidden="true" width="1em"height="1em"fill="currentColor"class="theme-toggle__inner-moon"
+    viewBox="0 0 32 32"
+  >
+    <path d="M27.5 11.5v-7h-7L16 0l-4.5 4.5h-7v7L0 16l4.5 4.5v7h7L16 32l4.5-4.5h7v-7L32 16l-4.5-4.5zM16 25.4a9.39 9.39 0 1 1 0-18.8 9.39 9.39 0 1 1 0 18.8z" />
+    <circle cx="16" cy="16" r="8.1" />
+  </svg>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-container">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <h1 class="hero-name">John Robert</h1>
+                    <div class="hero-title-wrapper">
+                        <span class="hero-title-prefix">A</span>
+                        <span class="hero-title" id="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate about creating innovative mobile and web-based applications 
+                        that solve real-world problems and deliver exceptional user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Hire Me</span>
+                        </a>
+                        <a href="assets/JRJDEV-CV.png" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/?ref=homescreenpwa" target="_blank" class="social-link" aria-label="Facebook">
+        <svg class="social-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 5 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 17 22 12z"/>
+        </svg>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/JohnRobert212896" target="_blank" class="social-link" aria-label="GitHub">
+        <svg class="social-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.17c-3.338.724-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.107-.774.418-1.305.762-1.604-2.665-.303-5.467-1.332-5.467-5.93 0-1.31.468-2.381 1.235-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.478 11.478 0 0 1 3-.404c1.02.005 2.045.137 3 .404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.839 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.922.43.372.823 1.104.823 2.222v3.293c0 .32.192.694.8.576C20.565 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@JohnRobertDurante-x8y" target="_blank" class="social-link" aria-label="YouTube">
+        <svg class="social-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a2.994 2.994 0 0 0-2.116-2.115C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.382.571a2.994 2.994 0 0 0-2.116 2.115A31.187 31.187 0 0 0 0 12a31.187 31.187 0 0 0 .502 5.814 2.994 2.994 0 0 0 2.116 2.115C4.4 20.5 12 20.5 12 20.5s7.6 0 9.382-.571a2.994 2.994 0 0 0 2.116-2.115A31.187 31.187 0 0 0 24 12a31.187 31.187 0 0 0-.502-5.814zM9.75 15.02V8.98l6.5 3.02-6.5 3.02z"/>
+        </svg>
+    </a>
+
+    <!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/john-robert-durante-5564b7279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link" aria-label="LinkedIn">
+    <svg class="social-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-.95 1.75-2.2 3.6-2.2 3.85 0 4.55 2.5 4.55 5.75V24h-4v-8.5c0-2.05-.05-4.7-2.85-4.7-2.85 0-3.3 2.2-3.3 4.55V24h-4V8z"/>
+    </svg>
+</a>
+
+</div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <div class="image-border"></div>
+                        <img src="assets/Profile.jpg" alt="John Robert - Full Stack Developer" class="profile-img">
+                        <div class="floating-icons">
+    <span class="floating-icon icon-1">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+    </span>
+    <span class="floating-icon icon-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
+    </span>
+    <span class="floating-icon icon-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+    </span>
+    <span class="floating-icon icon-4">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+    </span>
+</div>
+                    </div>
+                    <div class="stats-card" data-aos="zoom-in" data-aos-delay="500">
+
+    <!-- Projects -->
+    <div class="stat-item">
+        <div class="stat-icon">
+            <i class="fas fa-folder-open"></i>
+        </div>
+        <span class="stat-number" data-target="7">0</span>
+        <span class="stat-label">Projects</span>
+    </div>
+
+    <div class="stat-divider"></div>
+
+    <!-- Experience -->
+    <div class="stat-item">
+        <div class="stat-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <span class="stat-number" data-target="3">0</span>
+        <span class="stat-label">Years Exp.</span>
+    </div>
+
+</div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator">
+    <span class="scroll-text">Scroll Down</span>
+    <svg class="scroll-icon" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 16l-6-6h12z"/>
+    </svg>
+</a>
+        </section>
+
+        
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Get To Know</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="about-img-wrapper">
+                            <img src="assets/Profile.jpg" alt="John Robert">
+                            <div class="experience-badge">
+                                <span class="exp-number">1+</span>
+                                <span class="exp-text">Year<br>Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-info" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="about-cards">
+                            <div class="about-card">
+                                <i class="fas fa-award"></i>
+                                <h3>Experience</h3>
+                                <p>1+ Year Working</p>
+                            </div>
+                            <div class="about-card">
+                                <i class="fas fa-users"></i>
+                                <h3>Clients</h3>
+                                <p>3+ Satisfied</p>
+                            </div>
+                            <div class="about-card">
+                                <i class="fas fa-folder-open"></i>
+                                <h3>Projects</h3>
+                                <p>7+ Completed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-text">
+                            <p>
+                                I am a <strong>Full Stack Developer</strong> specializing in both <strong>Mobile</strong> and 
+                                <strong>Web-Based Applications</strong>. With a strong foundation in various programming languages 
+                                and frameworks, I create efficient, scalable, and user-friendly solutions.
+                            </p>
+                            <p>
+                                My expertise extends to <strong>OSINT (Open Source Intelligence)</strong> techniques, allowing me 
+                                to develop comprehensive security-focused applications. I'm passionate about clean code, 
+                                modern design patterns, and delivering projects that exceed client expectations.
+                            </p>
+                            <p>
+                                Whether it's building a complex monitoring system, an e-commerce platform, or a mobile app, 
+                                I approach every project with dedication and attention to detail.
+                            </p>
+                        </div>
+                        
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fas fa-user"></i>
+                                <span class="detail-label">Name:</span>
+                                <span class="detail-value">John Robert J. Durante</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value">jrj.durante.it08@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span class="detail-label">Phone:</span>
+                                <span class="detail-value">+63 948 689 3786</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="detail-label">Location:</span>
+                                <span class="detail-value">Philippines</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-comments"></i>
+                            <span>Let's Talk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">My Abilities</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                </div>
+                
+                <div class="skills-content">
+                    <!-- Programming Languages -->
+                    <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i>
+                            Programming Languages
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                       <span>Java</span>
+                                </div>
+                                <span class="skill-name">Java</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                    <span>Py</span>
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-php"></i>
+                                    <span>PHP</span>
+                                </div>
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-hashtag"></i>
+                                    <span>C#</span>
+                                </div>
+                                <span class="skill-name">C#</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon vb-icon">
+                                    <span>VB</span>
+                                </div>
+                                <span class="skill-name">VB.NET</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon asp-icon">
+                                    <span>ASP</span>
+                                </div>
+                                <span class="skill-name">ASP.NET</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Frameworks -->
+<div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+    <h3 class="category-title">
+        <i class="fas fa-layer-group"></i>
+        Frameworks & Libraries
+    </h3>
+
+    <div class="skills-grid">
+
+        <!-- Laravel -->
+        <div class="skill-card">
+            <div class="skill-icon laravel">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
+            </div>
+            <span class="skill-name">Laravel</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="90"></div>
+            </div>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card">
+            <div class="skill-icon react">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+            </div>
+            <span class="skill-name">React</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="75"></div>
+            </div>
+        </div>
+
+        <!-- Vue -->
+        <div class="skill-card">
+            <div class="skill-icon vue">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg">
+            </div>
+            <span class="skill-name">Vue.js</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="70"></div>
+            </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="skill-card">
+            <div class="skill-icon bootstrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+            </div>
+            <span class="skill-name">Bootstrap</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="95"></div>
+            </div>
+        </div>
+
+        <!-- Node -->
+        <div class="skill-card">
+            <div class="skill-icon node">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+            </div>
+            <span class="skill-name">Node.js</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="70"></div>
+            </div>
+        </div>
+
+        <!-- .NET (No FA icon, use custom) -->
+        <div class="skill-card">
+            <div class="skill-icon dotnet-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET">
+            </div>
+            <span class="skill-name">.NET Core</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="80"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+                    
+                    <!-- Tools & Technologies -->
+<div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+    <h3 class="category-title">
+        <i class="fas fa-tools"></i>
+        Tools & Technologies
+    </h3>
+
+    <div class="skills-grid">
+
+        <!-- MySQL -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+            </div>
+            <span class="skill-name">MySQL</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="90"></div>
+            </div>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+            </div>
+            <span class="skill-name">Git</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="85"></div>
+            </div>
+        </div>
+
+       <!-- OSINT -->
+<div class="skill-card">
+    <div class="skill-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="OSINT">
+    </div>
+    <span class="skill-name">OSINT</span>
+    <div class="skill-level">
+        <div class="level-bar" data-level="80"></div>
+    </div>
+</div>
+
+        <!-- Android -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg">
+            </div>
+            <span class="skill-name">Android</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="75"></div>
+            </div>
+        </div>
+
+        <!-- Canva -->
+<div class="skill-card">
+    <div class="skill-icon">
+       <i class="fab fa-canva></i>
+          <span>Canva</span>
+    </div>
+    <span class="skill-name">Canva</span>
+    <div class="skill-level">
+        <div class="level-bar" data-level="70"></div>
+    </div>
+</div>
+</div>
+
+        <!-- REST API -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <img src="https://cdn.simpleicons.org/postman/FF6C37">
+            </div>
+            <span class="skill-name">REST API</span>
+            <div class="skill-level">
+                <div class="level-bar" data-level="85"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                
+                <!-- Project Filters -->
+                <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="system">Systems</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: LGU Reports Monitoring System -->
+                    <div class="project-card" data-category="system" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="assets/LGU RMS.png" alt="LGU Reports Monitoring System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="[your-lgu-demo.com](https://your-lgu-demo.com)" target="_blank" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="[github.com](https://github.com/yourprofile/lgu-reports)" target="_blank" class="project-link" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3 class="project-title">LGU Reports Monitoring System</h3>
+                            <p class="project-description">
+                                A comprehensive monitoring system for Local Government Units to track, manage, 
+                                and generate reports on various municipal activities and services.
+                            </p>
+                            <a href="[your-lgu-demo.com](https://your-lgu-demo.com)" target="_blank" class="project-btn">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Activity Tracker -->
+                    <div class="project-card" data-category="mobile" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="assets/activity-tracker.png" alt="Activity Tracker">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="[your-tracker-demo.com](https://your-tracker-demo.com)" target="_blank" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="[github.com](https://github.com/yourprofile/activity-tracker)" target="_blank" class="project-link" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Vb.Net</span>
+                                <span class="tag">Web Applications</span>
+                                <span class="tag">MS Access</span>
+                            </div>
+                            <h3 class="project-title">Activity Tracker</h3>
+                            <p class="project-description">
+                                Web application for tracking daily activities, fitness goals, and personal 
+                                productivity with analytics and progress visualization.
+                            </p>
+                            <a href="[your-tracker-demo.com](https://your-tracker-demo.com)" target="_blank" class="project-btn">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: BMI Calculator -->
+                    <div class="project-card" data-category="mobile" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="assets/BMI Cal.png" alt="BMI Calculator">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="[your-bmi-demo.com](https://your-bmi-demo.com)" target="_blank" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="[github.com](https://github.com/yourprofile/bmi-calculator)" target="_blank" class="project-link" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">VB.NET</span>
+                                <span class="tag">WinForms</span>
+                            </div>
+                            <h3 class="project-title">BMI Calculator</h3>
+                            <p class="project-description">
+                                Health-focused application that calculates Body Mass Index with health recommendations 
+                                and tracking history for users.
+                            </p>
+                            <a href="https://johnrobert212896.github.io/Hospital-BMI-Calculator-V2/" target="_blank" class="project-btn">
+                                 View Project <i class="fas fa-arrow-right"></i>
+                              </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: Barangay Portal -->
+                    <div class="project-card" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="assets/Barangay Portal.png" alt="Barangay Portal">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="[your-barangay-demo.com](https://your-barangay-demo.com)" target="_blank" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="[github.com](https://github.com/yourprofile/barangay-portal)" target="_blank" class="project-link" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Web applications</span>
+                                <span class="tag">Google sites</span>
+                                <span class="tag">Google drives</span>
+                            </div>
+                            <h3 class="project-title">Barangay Portal</h3>
+                            <p class="project-description">
+                                Online portal for barangay services including document requests, complaints management, 
+                                announcements, and resident information system.
+                            </p>
+                            <a href="https://johnrobert212896.github.io/barangay-portal/" target="_blank" class="project-btn">
+                                 View Project <i class="fas fa-arrow-right"></i>
+                              </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5: Student Profile -->
+                    <div class="project-card" data-category="system" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="assets/Student Profile.png" alt="Student Profile">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="[your-student-demo.com]( https://johnrobert212896.github.io/Student-Profile/)" target="_blank" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="[github.com]( https://johnrobert212896.github.io/Student-Profile/)" target="_blank" class="project-link" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Html, Css and Javascripts</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">MySql</span>
+                            </div>
+                            <h3 class="project-title">Student Profile System</h3>
+                            <p class="project-description">
+                                Complete student information management system with enrollment tracking, grade management, 
+                                and academic records.
+                            </p>
+                            <a href="https://johnrobert212896.github.io/Student-Profile/" target="_blank" class="project-btn">
+                                 View Project <i class="fas fa-arrow-right"></i>
+                              </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6: E-Commerce Website -->
+                    <div class="project-card" data-category="web" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="assets/E-commerce.png" alt="E-Commerce Website">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="[your-ecommerce-demo.com](https://your-ecommerce-demo.com)" target="_blank" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="[github.com](https://github.com/yourprofile/ecommerce)" target="_blank" class="project-link" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">React</span>
+                                <span class="tag">My Sql</span>
+                            </div>
+                            <h3 class="project-title">E-Commerce Website</h3>
+                            <p class="project-description">
+                                Full-featured online shopping platform with product management, cart system, 
+                                payment integration, and order tracking.
+                            </p>
+                            <a href="https://johnrobert212896.github.io/resto-landing/" target="_blank" class="project-btn">
+                                 View Project <i class="fas fa-arrow-right"></i>
+                              </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 7: Wedding Invitation Website -->
+                    <div class="project-card" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="assets/Wedding Invitations.png" alt="Website Invitation">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="[your-invitation-demo.com](https://your-invitation-demo.com)" target="_blank" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="[github.com](https://github.com/yourprofile/invitation)" target="_blank" class="project-link" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Website Invitations</h3>
+                            <p class="project-description">
+                                Beautiful, responsive digital invitation websites for weddings, birthdays, and special events 
+                                with RSVP functionality.
+                            </p>
+                             <a href="https://johnrobert212896.github.io/Website-Invitations/" target="_blank" class="project-btn">
+                                 View Project <i class="fas fa-arrow-right"></i>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">My Services</h2>
+                </div>
+                
+                <!-- Pricing Highlight -->
+<div class="pricing-highlight" data-aos="zoom-in" data-aos-delay="100">
+    <div class="pricing-content">
+
+        <!-- Pricing Icon (Tags) -->
+        <div class="pricing-icon">
+            <svg class="svg-icon" width="40" height="40" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M497.94 74.18l-60.12-60.12c-18.75-18.75-49.14-18.75-67.88 0L188.2 195.8c-12.5 12.5-12.5 32.76 0 45.25l60.12 60.12c12.5 12.5 32.76 12.5 45.25 0L497.94 142c18.75-18.74 18.75-49.13 0-67.82zM256 192c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"/>
+            </svg>
+        </div>
+
+        <div class="pricing-info">
+            <h3>Affordable Website Development</h3>
+            <p>Get your professional website starting at only</p>
+            <div class="price">
+                <span class="currency">₱</span>
+                <span class="amount">2,500</span>
+            </div>
+            <span class="price-note">*Price varies based on complexity and features</span>
+        </div>
+
+        <!-- Start Project Button with Rocket Icon -->
+        <a href="#contact" class="btn btn-primary">
+            <svg class="svg-icon btn-icon" width="20" height="20" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M505 19.1C499.5 14.6 492.3 13 485.8 15c-3.6.9-84.1 25.8-180.7 122.4-61.8 61.8-106.3 121.3-122.3 148.1-15.9 26.6-17.1 37.2-15.3 41.8 3.8 9.8 15.3 12 22.6 4.7l38-38 60.5 60.5c-23.1 5.2-51.5 2.3-82.6-9.3-24.6-9-58.2-25.8-95.1-62.6C9.3 265.3-7.4 231.7 1.6 207c11.6-31.1 14.5-59.5 9.3-82.6L71.4 94.3l60.5 60.5-38 38c-7.3 7.3-5.1 18.8 4.7 22.6 4.6 1.8 15.2.6 41.8-15.3 26.8-16 86.3-60.5 148.1-122.3C479.2 103.2 504.1 22.7 505 19.1z"/>
+            </svg>
+            <span>Start Your Project</span>
+        </a>
+
+    </div>
+</div>
+                
+                <div class="services-grid">
+
+    <!-- Web Development -->
+    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-icon">
+            <!-- Laptop Code SVG -->
+            <svg width="48" height="48" viewBox="0 0 640 512" fill="currentColor">
+                <path d="M64 64h512v288H64V64zm576 336h-64v-16H64v16H0v32h640v-32z"/>
+            </svg>
+        </div>
+        <h3 class="service-title">Web Development</h3>
+        <p class="service-description">
+            Custom websites and web applications built with modern technologies. 
+            From landing pages to complex systems.
+        </p>
+        <ul class="service-features">
+            <li>
+                <!-- Check SVG -->
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/>
+                </svg>
+                Responsive Design
+            </li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/>
+            </svg> SEO Optimized</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/>
+            </svg> Fast Performance</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/>
+            </svg> Admin Dashboard</li>
+        </ul>
+        <span class="service-price">Starting at ₱2,500</span>
+    </div>
+
+    <!-- Mobile App Development -->
+    <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="featured-badge">Popular</div>
+        <div class="service-icon">
+            <!-- Mobile SVG -->
+            <svg width="48" height="48" viewBox="0 0 384 512" fill="currentColor">
+                <path d="M336 0H48C21.49 0 0 21.49 0 48v416c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM192 464c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"/>
+            </svg>
+        </div>
+        <h3 class="service-title">Mobile App Development</h3>
+        <p class="service-description">
+            Native and cross-platform mobile applications for Android. 
+            User-friendly interfaces with robust functionality.
+        </p>
+        <ul class="service-features">
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> Android Development</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> User-Friendly UI</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> API Integration</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> Database Sync</li>
+        </ul>
+        <span class="service-price">Starting at ₱2,500</span>
+    </div>
+
+    <!-- System Development -->
+    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-icon">
+            <!-- Cogs SVG -->
+            <svg width="48" height="48" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M487.4 315.7l-43.4-25.1c2.2-12.7 3.4-25.7 3.4-38.6s-1.2-25.9-3.4-38.6l43.4-25.1c6.3-3.6 8.5-11.4 5-17.7l-45.7-79.2c-3.5-6.3-11.3-8.5-17.6-5l-43.4 25.1c-20.6-17.1-45-30.2-71.3-38.2V24c0-7-5.7-12.7-12.7-12.7h-91.4c-7 0-12.7 5.7-12.7 12.7v50.7c-26.3 8-50.7 21.1-71.3 38.2l-43.4-25.1c-6.3-3.5-14.1-1.3-17.6 5l-45.7 79.2c-3.5 6.3-1.3 14.1 5 17.7l43.4 25.1c-2.2 12.7-3.4 25.7-3.4 38.6s1.2 25.9 3.4 38.6l-43.4 25.1c-6.3 3.6-8.5 11.4-5 17.7l45.7 79.2c3.5 6.3 11.3 8.5 17.6 5l43.4-25.1c20.6 17.1 45 30.2 71.3 38.2v50.7c0 7 5.7 12.7 12.7 12.7h91.4c7 0 12.7-5.7 12.7-12.7v-50.7c26.3-8 50.7-21.1 71.3-38.2l43.4 25.1c6.3 3.5 14.1 1.3 17.6-5l45.7-79.2c3.5-6.3 1.3-14.1-5-17.7z"/>
+            </svg>
+        </div>
+        <h3 class="service-title">System Development</h3>
+        <p class="service-description">
+            Custom management systems for businesses and organizations. 
+            Streamline your operations with tailored solutions.
+        </p>
+        <ul class="service-features">
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> Inventory System</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> POS System</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> Monitoring System</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> Reporting Tools</li>
+        </ul>
+        <span class="service-price">Starting at ₱2,500</span>
+    </div>
+
+    <!-- UI/UX Design -->
+    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-icon">
+            <!-- Paint Brush SVG -->
+            <svg width="48" height="48" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M290.74 93.24L225.91 158.1l-197.4 197.4c-25.02 25.02-28.4 63.5-8.5 93.1l8.5 12.6c19.9 29.6 58.3 35.3 83.4 10.2l197.4-197.4 64.84-64.84-73.34-73.34z"/>
+            </svg>
+        </div>
+        <h3 class="service-title">UI/UX Design</h3>
+        <p class="service-description">
+            Beautiful and intuitive interface designs that enhance user experience 
+            and make your application stand out.
+        </p>
+        <ul class="service-features">
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> Wireframing</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> Prototyping</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> User Testing</li>
+            <li><svg class="check-icon" width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M173.898 439.404l-166.4-166.4c-12.496-12.496-12.496-32.758 0-45.255l22.627-22.627c12.497-12.497 32.758-12.497 45.255 0L192 312.69l271.314-271.314c12.497-12.497 32.758-12.497 45.255 0l22.627 22.627c12.497 12.497 12.497 32.758 0 45.255l-320 320c-12.496 12.497-32.758 12.497-45.254.001z"/></svg> Design System</li>
+        </ul>
+        <span class="service-price">Starting at ₱1,500</span>
+    </div>
+
+</div>
+                
+                <!-- Process -->
+<div class="process-section" data-aos="fade-up">
+    <h3 class="process-title">How I Work</h3>
+    <div class="process-steps">
+
+        <!-- Step 1: Consultation -->
+        <div class="process-step">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+                <!-- Comments SVG -->
+                <svg width="40" height="40" viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M256 32C114.624 32 0 125.12 0 240c0 49.6 21.248 95.04 56.384 131.136C49.344 404.544 25.28 435.744 24.32 436.928c-3.008 3.584-4.576 8.256-4.576 12.992C19.744 460.544 22.816 468.8 28.8 474.112c5.888 5.248 14.144 7.36 21.984 5.376 0 0 28.384-8.768 68.096-23.936C140.416 463.936 197.376 480 256 480c141.376 0 256-93.12 256-208S397.376 32 256 32z"/>
+                </svg>
+            </div>
+            <h4>Consultation</h4>
+            <p>Discuss your project requirements and goals</p>
+        </div>
+
+        <div class="process-connector"></div>
+
+        <!-- Step 2: Planning -->
+        <div class="process-step">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+                <!-- Pencil-Ruler SVG -->
+                <svg width="40" height="40" viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M497.9 74.17l-60.12-60.12c-18.75-18.75-49.13-18.75-67.88 0L188.2 195.8c-12.5 12.5-12.5 32.76 0 45.25l60.12 60.12c12.5 12.5 32.76 12.5 45.25 0L497.9 142c18.7-18.7 18.7-49.13 0-67.83z"/>
+                </svg>
+            </div>
+            <h4>Planning</h4>
+            <p>Create wireframes and project timeline</p>
+        </div>
+
+        <div class="process-connector"></div>
+
+        <!-- Step 3: Development -->
+        <div class="process-step">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+                <!-- Code SVG -->
+                <svg width="40" height="40" viewBox="0 0 640 512" fill="currentColor">
+                    <path d="M414.8 107.6L288 240l126.8 132.4c10.2 10.6 9.5 27-1.2 37.2l-22.6 21.8c-10.6 10.2-27 9.5-37.2-1.2L177.4 256l203.4-203.8c10.2-10.6 26.6-11.3 37.2-1.2l22.6 21.8c10.7 10.3 11.4 26.7 1.2 37.2z"/>
+                </svg>
+            </div>
+            <h4>Development</h4>
+            <p>Build your project with regular updates</p>
+        </div>
+
+        <div class="process-connector"></div>
+
+        <!-- Step 4: Launch -->
+        <div class="process-step">
+            <div class="step-number">04</div>
+            <div class="step-icon">
+                <!-- Rocket SVG -->
+                <svg width="40" height="40" viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M505 19.1C499.5 14.6 492.3 13 485.8 15c-3.6.9-84.1 25.8-180.7 122.4-61.8 61.8-106.3 121.3-122.3 148.1-15.9 26.6-17.1 37.2-15.3 41.8 3.8 9.8 15.3 12 22.6 4.7l38-38 60.5 60.5c-23.1 5.2-51.5 2.3-82.6-9.3-24.6-9-58.2-25.8-95.1-62.6C9.3 265.3-7.4 231.7 1.6 207c11.6-31.1 14.5-59.5 9.3-82.6L71.4 94.3l60.5 60.5-38 38c-7.3 7.3-5.1 18.8 4.7 22.6 4.6 1.8 15.2.6 41.8-15.3 26.8-16 86.3-60.5 148.1-122.3C479.2 103.2 504.1 22.7 505 19.1z"/>
+                </svg>
+            </div>
+            <h4>Launch</h4>
+            <p>Deploy and provide ongoing support</p>
+        </div>
+
+    </div>
+</div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                        <h3>Let's work together!</h3>
+                        <p>
+                            Have a project in mind? Need changes or fixes for your existing system? 
+                            Feel free to reach out! I'm always open to discussing new projects and ideas.
+                        </p>
+                        
+                        <div class="contact-cards">
+
+    <!-- Email -->
+    <div class="contact-card">
+        <div class="contact-icon">
+            <svg class="svg-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 13.065l-11.5-7.065v14h23v-14l-11.5 7.065zm0-2.13l11.5-7.065h-23l11.5 7.065z"/>
+            </svg>
+        </div>
+        <div class="contact-details">
+            <h4>Email</h4>
+            <a href="mailto:jrj.durante.it08@gmail.com">jrj.durante.it08@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="contact-card">
+        <div class="contact-icon">
+            <svg class="svg-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88.11.29.04.63-.21 1.11l-2.43 2.8z"/>
+            </svg>
+        </div>
+        <div class="contact-details">
+            <h4>Phone</h4>
+            <a href="tel:+639486893786">+63 948 689 3786</a>
+        </div>
+    </div>
+
+    <!-- Messenger -->
+    <div class="contact-card">
+        <div class="contact-icon">
+            <svg class="svg-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.373 0 0 4.993 0 11.167c0 3.496 1.773 6.604 4.606 8.717v4.116l4.17-2.29c.865.236 1.78.362 2.618.362 6.627 0 12-4.993 12-11.167S18.627 0 12 0zm1.16 12.903l-2.924-3.146-6.047 3.146 6.047-7.145 2.924 3.146 6.047-3.146-6.047 7.145z"/>
+            </svg>
+        </div>
+        <div class="contact-details">
+            <h4>Messenger</h4>
+            <a href="https://m.me/john.robert.j.durante" target="_blank">John Robert J. Durante</a>
+        </div>
+    </div>
+
+    <!-- Location -->
+    <div class="contact-card">
+        <div class="contact-icon">
+            <svg class="svg-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+            </svg>
+        </div>
+        <div class="contact-details">
+            <h4>Location</h4>
+            <span>Philippines</span>
+        </div>
+    </div>
+
+</div>
+                        
+                        <div class="contact-socials">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/?ref=homescreenpwa" target="_blank" class="social-link" aria-label="Facebook">
+        <svg class="social-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 5 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 17 22 12z"/>
+        </svg>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/JohnRobert212896" target="_blank" class="social-link" aria-label="GitHub">
+        <svg class="social-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.17c-3.338.724-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.107-.774.418-1.305.762-1.604-2.665-.303-5.467-1.332-5.467-5.93 0-1.31.468-2.381 1.235-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.478 11.478 0 0 1 3-.404c1.02.005 2.045.137 3 .404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.839 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.922.43.372.823 1.104.823 2.222v3.293c0 .32.192.694.8.576C20.565 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@JohnRobertDurante-x8y" target="_blank" class="social-link" aria-label="YouTube">
+        <svg class="social-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a2.994 2.994 0 0 0-2.116-2.115C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.382.571a2.994 2.994 0 0 0-2.116 2.115A31.187 31.187 0 0 0 0 12a31.187 31.187 0 0 0 .502 5.814 2.994 2.994 0 0 0 2.116 2.115C4.4 20.5 12 20.5 12 20.5s7.6 0 9.382-.571a2.994 2.994 0 0 0 2.116-2.115A31.187 31.187 0 0 0 24 12a31.187 31.187 0 0 0-.502-5.814zM9.75 15.02V8.98l6.5 3.02-6.5 3.02z"/>
+        </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/jrjdev08?igsh=dHY4ajFvODJoODJz" target="_blank" class="social-link" aria-label="Instagram">
+        <svg class="social-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.427.402a4.92 4.92 0 0 1 1.756 1.014 4.92 4.92 0 0 1 1.014 1.756c.162.457.348 1.257.402 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.402 2.427a4.902 4.902 0 0 1-1.014 1.756 4.902 4.902 0 0 1-1.756 1.014c-.457.162-1.257.348-2.427.402-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.427-.402a4.92 4.92 0 0 1-1.756-1.014 4.92 4.92 0 0 1-1.014-1.756c-.162-.457-.348-1.257-.402-2.427C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.402-2.427a4.902 4.902 0 0 1 1.014-1.756 4.902 4.902 0 0 1 1.756-1.014c.457-.162 1.257-.348 2.427-.402C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.78.127 4.845.346 4.042.644 3.193.951 2.446 1.432 1.758 2.12.951 2.928.468 3.675.16 4.524c-.298.803-.517 1.738-.574 3.01C-.012 8.332 0 8.741 0 12c0 3.259.012 3.668.07 4.948.057 1.272.276 2.207.574 3.01.308.849.791 1.596 1.599 2.404.688.688 1.435 1.171 2.284 1.479.803.298 1.738.517 3.01.574C8.332 23.988 8.741 24 12 24s3.668-.012 4.948-.07c1.272-.057 2.207-.276 3.01-.574.849-.308 1.596-.791 2.404-1.599.688-.688 1.171-1.435 1.479-2.284.298-.803.517-1.738.574-3.01.058-1.28.07-1.689.07-4.948s-.012-3.668-.07-4.948c-.057-1.272-.276-2.207-.574-3.01-.308-.849-.791-1.596-1.599-2.404C21.753.468 21.006-.015 20.157-.323c-.803-.298-1.738-.517-3.01-.574C15.668-.012 15.259 0 12 0z"/>
+            <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
+            <circle cx="18.406" cy="5.594" r="1.44"/>
+        </svg>
+    </a>
+
+</div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper" data-aos="fade-left" data-aos-duration="1000">
+
+    <form action="https://formspree.io/f/mvzdojln" method="POST" class="contact-form">
+
+    <h3>Send a Request</h3>
+    <p>Please fill out the form below what do you want to build.</p>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@email.com">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message / Request</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Describe your request..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Send Request
+    </button>
+
+</form>
+
+<!-- SUCCESS MESSAGE -->
+<div id="form-success" style="display:none;">
+    <h3>Message Sent!</h3>
+    <p>Thank you! I will contact you soon.</p>
+</div>
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">JRJDev</span>
+                <p>Full Stack Developer specializing in Mobile and Web Applications</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JRJDev. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> in the Philippines</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="[unpkg.com](https://unpkg.com/aos@2.3.1/dist/aos.js)"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
