@@ -44,40 +44,56 @@ window.addEventListener('load', () => {
 // ========================================
 // Theme Toggle
 // ========================================
-function initTheme() {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-    } else if (prefersDark) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        updateThemeIcon('dark');
+document.addEventListener('DOMContentLoaded', () => {
+
+    const themeToggle =
+        document.getElementById('theme-toggle');
+
+    if (!themeToggle) return;
+
+    function initTheme() {
+
+        const saved =
+            localStorage.getItem('theme');
+
+        const theme =
+            saved ? saved : 'light'; // DEFAULT LIGHT MODE
+
+        document.body.setAttribute(
+            'data-theme',
+            theme
+        );
     }
-}
 
-function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-}
+    function toggleTheme() {
 
-function updateThemeIcon(theme) {
-    if (theme === 'dark') {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    } else {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
+        const current =
+            document.body.getAttribute('data-theme');
+
+        const newTheme =
+            current === 'dark'
+                ? 'light'
+                : 'dark';
+
+        document.body.setAttribute(
+            'data-theme',
+            newTheme
+        );
+
+        localStorage.setItem(
+            'theme',
+            newTheme
+        );
     }
-}
 
-themeToggle.addEventListener('click', toggleTheme);
-initTheme();
+    themeToggle.addEventListener(
+        'click',
+        toggleTheme
+    );
+
+    initTheme();
+
+});
 
 // ========================================
 // Navigation

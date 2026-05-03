@@ -77,9 +77,9 @@
 }
 
 /* Theme Application */
-[data-theme="light"] {
+body[data-theme="light"] {
     --bg-primary: var(--bg-primary-light);
-    --bg-secondary: var(--bg-secondary-light);
+    --text-primary: var(--text-primary-light);
     --bg-tertiary: var(--bg-tertiary-light);
     --text-primary: var(--text-primary-light);
     --text-secondary: var(--text-secondary-light);
@@ -88,9 +88,9 @@
     --card-shadow: var(--card-shadow-light);
 }
 
-[data-theme="dark"] {
+body[data-theme="dark"] {
     --bg-primary: var(--bg-primary-dark);
-    --bg-secondary: var(--bg-secondary-dark);
+    --text-primary: var(--text-primary-dark);
     --bg-tertiary: var(--bg-tertiary-dark);
     --text-primary: var(--text-primary-dark);
     --text-secondary: var(--text-secondary-dark);
@@ -326,19 +326,44 @@ input, textarea, select {
 .theme-toggle {
     width: 44px;
     height: 44px;
-    border-radius: var(--radius-full);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-primary);
+
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+
     background: var(--bg-tertiary);
-    transition: all var(--transition-fast);
+    color: var(--text-primary);
+
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
+/* ICON SIZE */
+.theme-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* DEFAULT: LIGHT MODE (SHOW SUN ONLY) */
+body[data-theme="light"] .dark-icon {
+    display: none;
+}
+
+/* DARK MODE (SHOW MOON ONLY) */
+body[data-theme="dark"] .light-icon {
+    display: none;
+}
+
+/* HOVER EFFECT */
 .theme-toggle:hover {
-    color: var(--neon-blue);
+    background: var(--neon-blue);
+    color: #000;
     transform: rotate(15deg);
 }
+
 
 .nav-toggle {
     display: none;
